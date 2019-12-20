@@ -3,7 +3,7 @@ Docker image with basic script to notify Rollbar of a deployment from Codeship C
 
 ## Required ENV vars
 
- - `ROLLBAR_ACCESS_TOKEN` - Rollbar access token, obviously
+ - `ROLLBAR_TOKEN` - Rollbar access token, obviously
  - `CI_BRANCH` - The Git repo branch triggering the build. If `develop` the `environment` reported to Rollbar will be `staging` and if branch is `master` the environment will be reported as `production`
  - `CI_COMMIT_ID` - The commit hash for build
  - `CI_COMMITTER_USERNAME` Username for person who pushed commit

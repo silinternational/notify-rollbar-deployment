@@ -8,7 +8,7 @@ fi
 echo "Notifying Rollbar of deployment to $ENVIRONMENT ..."
 
 curl https://api.rollbar.com/api/1/deploy/ \
-  -F access_token=$ROLLBAR_ACCESS_TOKEN \
+  -F access_token=$ROLLBAR_TOKEN \
   -F environment=$ENVIRONMENT \
   -F revision=$CI_COMMIT_ID \
   -F local_username=$CI_COMMITTER_USERNAME
