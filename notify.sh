@@ -1,7 +1,7 @@
 #!/usr/bin/env ash
 
 ENVIRONMENT="staging"
-if [ "$CI_BRANCH" = "master" ]; then
+if [ "$CI_BRANCH" = "master" ] || [ "$CI_BRANCH" = "main" ]; then
     ENVIRONMENT="production"
 fi
 
